@@ -1,0 +1,685 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Curriculum 💼 Eliana Aliz</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+}
+
+.simple-table-header {
+	background: rgb(247, 246, 243);
+	color: black;
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(145, 145, 142, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(187, 132, 108, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(215, 129, 58, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 148, 51, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(108, 155, 125, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(91, 151, 189, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(167, 130, 195, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(205, 116, 159, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(225, 111, 100, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(145, 145, 142, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(187, 132, 108, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(215, 129, 58, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 148, 51, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(108, 155, 125, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(91, 151, 189, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(167, 130, 195, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(205, 116, 159, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(225, 111, 100, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="982b5393-4ceb-4428-94d2-ecabb5e9fcf7" class="page sans"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80" style="object-position:center 50.980000000000004%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="Curriculum%20%F0%9F%92%BC%20Eliana%20Aliz%20982b53934ceb442894d2ecabb5e9fcf7/perfil.jpeg"/></div><h1 class="page-title">Curriculum 💼 Eliana Aliz</h1></header><div class="page-body"><p id="d85b72b7-ed6b-4e5d-b788-9ce30ad0af30" class="">Arquitectura de Integración y <strong>Experta en APIs e Interesada en IA, Big Data &amp; Machine Learning</strong></p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="ace2a0e7-0f7e-4911-8bc5-f4215ce60826"><div style="font-size:1.5em"><span class="icon">🛠</span></div><div style="width:100%"><mark class="highlight-gray">Write about your skills and position title briefly</mark> ... Quod autem meum munus dicis non equidem recuso, sed te adiungo socium. Qua ex cognitione facilior facta est investigatio rerum occultissimarum. Nam quid possumus facere melius? Videmusne ut pueri ne verberibus quidem a contemplandis rebus perquirendisque deterreantur? Scrupulum, inquam, abeunti; Quo studio Aristophanem putamus aetatem in litteris duxisse? Venit ad extremum; At, illa, ut vobis placet, partem quandam tuetur, reliquam deserit. </div></figure><p id="893174c4-08a8-432c-bfec-819cfb3f1363" class="">
+</p><p id="ff31007d-b319-4fe7-bf66-46af5e13a41a" class=""><strong>💡Plan - 🛠Crear - 🚀Lanzar - 🔎Analizar - 🌱lCrecimiento - 💰Monetizar - 🤖 Automatizar</strong></p><p id="d7342dcb-b329-4a52-9e23-cdba07117520" class="">
+</p><p id="d0399931-d6fb-426e-808d-b12737d604f4" class=""><strong>Experiencia clave</strong></p><ul id="842ec7a1-bb02-4eda-bbd1-831970637bfd" class="bulleted-list"><li style="list-style-type:disc">Cree prototipos y MVP para validar diseños comerciales</li></ul><ul id="7a6aa34a-1090-4f4f-b822-14d7103e3f58" class="bulleted-list"><li style="list-style-type:disc">Estrategia de producto y marketing</li></ul><ul id="51492917-7acc-4231-a761-e3033bd6d90c" class="bulleted-list"><li style="list-style-type:disc">Facilitación de Design Sprint</li></ul><ul id="97ddd164-a499-475c-b494-f92477b1b879" class="bulleted-list"><li style="list-style-type:disc">Experiencias de usuario digitales orientadas a la conversión</li></ul><ul id="3d922c4d-75d9-4aae-b57b-ef8c2d24f9c6" class="bulleted-list"><li style="list-style-type:disc">Desarrollo profundo y comprensión empresarial</li></ul><p id="89c6ac47-a83b-4fe9-b933-e65b4aa012c2" class="">
+</p><h1 id="647feeca-65e8-43b0-8c8a-bd1a0355bad5" class=""><strong>Resumen</strong></h1><p id="606f4000-e40a-401b-a973-8ba9b286b45d" class="">Impulsar nuevas empresas éticas y negocios en línea es mi pasión. Me gusta desarrollar <strong>experiencias de usuario orientadas a la conversión</strong> e <strong>interfaces de usuario </strong><strong>digitales</strong>  y lo hago desde que tengo 16 años. En ese entonces no sabía qué era una persona o UX. También me encantaría construir diseños, equipos y procesos <strong>efectivos y centrados en el ser humano . </strong>Creo que el trabajo ágil y colaborativo es una buena manera de hacer el mejor <strong>producto,</strong> es por eso que siempre recomiendo y facilito <strong>Design </strong><strong>Sprints</strong> . También tuve la oportunidad de trabajar en más de <strong>40 proyectos</strong> , a veces <strong>empresas emergentes ambiciosas,</strong> a veces para <strong>tratar de salvar el planeta</strong> o con proyectos pequeños o medianos. <strong> </strong><strong> </strong><strong>empresas</strong> y personas <strong>creativas de</strong><strong> </strong> todo el mundo. Muchos de estos proyectos fallaron o no alcanzaron todo su potencial, pero como <strong>creador web</strong> , debes <strong>experimentar, analizar y crecer 🌱</strong> . Me gustaría trabajar en e-learning o como desarrollador/marketer para una agencia. Tengo muchas ganas de aprender de ti y dar lo mejor de mí.</p><p id="d4c49d23-7f61-4110-a934-207f035ab95c" class="">
+</p><h3 id="20370e8a-198c-4cfd-b6ef-47cb3c5b7d62" class=""><strong>creador web</strong></h3><p id="7f164de8-76d0-46f1-a28f-04807a316271" class=""><strong>Front-end 
+</strong> HTML/CSS/SASS <strong>,</strong> cualquier marco CSS, Webflow, un poco de JS y React/Vue.js, la mayoría de los sistemas de plantillas, Figma, Bootstrap</p><p id="df90dd30-161f-491b-96e2-9cfbd8650395" class=""><strong>Back-end
+</strong> Ruby, Rails, Cualquier CMS, (WordPress PHP, Shopify expert, ..), algo de Python, aplicaciones sin código, API y manipulación de datos</p><p id="18949f17-9f74-43cf-93e0-9699720c5d77" class=""><strong>Gestión de proyectos 
+</strong> Agile, Remote, investigación, documentación, Roadmap, Lean Process, Git, Product Strategy,<strong>Taller de Sprint de Diseño</strong></p><hr id="dcabcbaf-6524-46cb-bf57-6c4546d7d4b0"/><p id="721d27d1-ad03-4fc3-9246-f1b047f922f1" class=""><strong>Diseño de experiencia de usuario (UX)
+</strong> Investigación de usuarios, pruebas de usuarios, pruebas de usabilidad, CRO, SEO, creación rápida de prototipos interactivos, MVP, arquitectura de proyectos (información), seguimiento de éxito</p><p id="f3e26fa4-3025-4906-be2d-6e73b0d7dfe2" class=""><strong>Marketing
+</strong> web Gestión de anuncios de Facebook/Instagram, anuncios de Google, retargeting, Twitter, automatizaciones de marketing, comercio electrónico, pruebas de campaña y optimización de presupuesto, blog, marketing por correo electrónico, investigación competitiva, piratería de crecimiento, chatbots</p><p id="7602044c-0b35-41af-adf3-60f9122a72c7" class="">
+</p><h1 id="fc3a5564-ff21-487f-ae01-c99434518d83" class=""><strong>Historial de trabajo y experiencias</strong></h1><p id="3aa8ecfc-d65b-4abb-ab66-a0ac52eb5b54" class="">🎯 proyectos independientes</p><p id="5df939ea-bc84-4ffc-b51c-bdcfbd7f9586" class="">🤓 60% — aprendizaje y estudios oficiales</p><p id="11732d02-61c0-4193-bee0-f0e344c8d67d" class="">🚀40% — carrera profesional</p><p id="8b31060b-b80d-4a39-9dcd-48fd83e69be7" class="">
+</p><p id="31fffd4f-acf5-4079-97d1-9591aa87ae1b" class="">Hoy dia</p><p id="f613f32a-b35f-4620-a0ab-674026f1bd8a" class="">2019</p><p id="55721467-9d6c-41a1-9d02-464d1b661d79" class=""><strong>UX Junior @ —- 
+</strong> Quiero aprender más sobre <strong>experiencia de usuario</strong> , <strong>estrategia de producto</strong> y<strong>Talleres de Sprints de Diseño
+</strong>Listo para trabajar y crecer en desarrollo, marketing, ventas, administración. 
+<a href="https://calendly.com/webagency/project">Haga clic aquí para reservar una llamada</a></p><p id="1351694d-d0c0-403f-bac1-e039ae718858" class=""><strong>Comercio electrónico - Business Owner</strong> @ <a href="http://ergoposture.fr/">ergoposture.fr</a> 
+Mi proyecto de comercio electrónico para evitar que los trabajadores de oficina tengan malas posturas 🤸 Crecerá como una tienda en línea de accesorios de oficina
+<em>CÓDIGO PROMOCIONAL:</em> CONTRATADO20</p><p id="c43c23f7-a7ab-40e4-8720-e645aa08e9d7" class=""><strong>Growth Hacker junior independiente en </strong><a href="http://growthdistrict.io/">Growth District</a> ⚡ - Pruebas de adquisición - Prueba y optimización de anuncios - Optimización de la tasa de conversión (CRO) - SEO, redacción publicitaria - Estrategia de productos - Eventos de agencias - Creación de sistemas de diseño para múltiples proyectos - Envío de correos electrónicos</p><p id="ca391485-e9d9-4afe-ac8e-411fb4d42d15" class=""><em><strong>Nomadventures</strong></em> es un coliving space<em> (proyecto)</em> para creativos, emprendedores, nómadas digitales y todo aquel que esté dispuesto a probar la experiencia diseñada para compartir, viajar, hacer startups, disfrutar la vida y hackearla. Todavía vienes allí a trabajar. Manténgase conectado @<a href="mailto:noeweyant@gmail.com"> Noemie Weyant</a></p><p id="9d5b59c9-70fe-4c0f-bd0c-bbb04bf64700" class="">2018</p><p id="257e70ac-497f-41db-b319-3c17f5e18f98" class=""><strong>Freelance Developer Designer</strong> @ DigiMKT Conversión mejorada y UX general para comercio electrónico <strong>pequeño y </strong> <strong>grande</strong> .</p><p id="c5036e3e-8b3e-4d5f-9a15-c1faf511c2a7" class=""><strong>Bootcamp intensivo de 3 meses</strong> en <a href="http://thehackingproject.org/">The Hacking Project</a> 
+Aprendió Ruby on Rails, MVP, API, Team &amp; Agile Management</p><p id="61441eb0-97ab-4cd0-8539-a6e6a66967ab" class=""><strong>4 meses </strong> <strong>Trabajando desde Canggu, Bali 🌴
+</strong> Freelance, <strong> </strong>Proyecto/organización remota, gestión, convivencia/trabajo, eventos de nómadas digitales, 🏄🏿</p><p id="dc7a9a71-da3a-43f3-8b03-f4481e663f41" class=""><strong>Desarrollador web y comercializador independiente</strong> @ <a href="http://ugogessa.carrd.co/">Ugo Gessa</a> 
+Comenzó el negocio independiente. Cree páginas de destino y sitios web atractivos para una mejor generación de clientes potenciales. Automatizaciones de marketing de código.</p><p id="4807292d-f87e-45ea-9648-0726a010177d" class=""><strong>Cursus.io</strong> @ <a href="http://cursus.io/">cursus.io</a> , <em><strong>Encuentra los mejores cursos
+</strong></em> Es un proyecto de inicio de EducTech 📚. Fue construido, lanzadoy fallóvarias veces, para ayudar a los usuarios de Internet a encontrar los mejores cursos, interactuar con una comunidad educativa, descubrir alternativas pedagógicas. <em>Los proyectos tuvieron algunos problemas de gestión de equipos y productos sobre la marcha, esta experiencia nos trajo mucho aprendizaje. </em>Desarrollo de visión y estrategia de UX a largo plazo y desarrollo completo.<em>(Próximamente otra vez)</em></p><p id="25860379-9765-4329-99c4-1de17546a657" class="">2017</p><p id="955a7f25-3e2e-4265-9871-7f568d6ca446" class="">2016</p><p id="2217c4f4-aec8-440d-a200-b2cd8a589bdd" class=""><strong>Cocktail Bartender</strong> @ <a href="https://milanotorino.eu/strasbourg/">Milano Torino</a>  
+Lanzamiento y trabajo en el mejor restaurante/bar de <em>cócteles, pizzas y aperitivos</em> de Estrasburgo</p><p id="1de7a8d8-89e4-4a27-a291-9061ccc1d604" class=""><strong>Pague las vacaciones con sitios web y marketing en </strong><a href="https://hotelparko.gr/">Parko Hôtel</a> y theparosisland Primera <a href="http://instagram.com/theparosisland">experiencia</a> 
+nómada digital en Paros, Grecia</p><p id="e9c96609-b5f0-4d95-a2f3-193d18932cc4" class=""><strong>AMAP Estrasburgo</strong> - <a href="http://amap-strasbourg.carrd.co/">@ amap-strasbourg.carrd.co</a> 
+Frutas y verduras frescas recolectadas localmente, entregadas con bicicletas 🚴‍♀️🍱</p><p id="ad5cdd87-a3cb-4220-88bf-4939a4e37989" class=""><strong>Primera </strong> <strong>experiencia de comercio electrónico</strong> @ <a href="http://www.peaceofpirates.com/">paceofpirates.com, </a><em>una tienda general de accesorios de viaje. </em>Me gustaría convertirlo en un blog o simplemente darle una segunda vida a este proyecto.</p><p id="1d691b8e-eed1-4850-adf9-e61c740712a6" class=""><strong>Bartender 🍸</strong> @ Le QG (CDD) y Hilton (Extra) —&gt; <a href="https://www.barschool.net/barschools/phuket">Certificación europea de barman de cócteles</a> , Tailandia 🌏</p><p id="03540b55-396c-4bed-beb7-e549c6c9b7aa" class="">2015</p><p id="78b9b314-6414-4934-9d48-76b90a047a46" class="">2013-2016</p><p id="729287c8-99d6-4f00-b389-c9db630869cf" class=""><strong>Nueva Zelanda</strong> 1 año de trabajo y viajes: paisajismo, vaquero, trabajos de manzana y vino, personal del albergue</p><p id="b04226c4-9c95-4911-b302-4b961d567511" class="">Creación de proyectos web y sitios web, blogs, videos, <a href="https://soundcloud.com/piratemusique/tracks">música</a> , inicio de escrituras y pruebas. Vender en e-bay y <a href="https://www.google.com/search?q=gorilla+gripper">amazon,</a> hackear juegos,<del>crack blandos</del>.., <del>Haz dinero en línea</del>. Mientras iba a la escuela secundaria</p><h1 id="91203ae8-0dbb-4d1e-9db1-cf11e4db6e63" class=""><strong>Educación, recursos de aprendizaje, tutoría</strong></h1><p id="7dcfd21d-db9a-4bf6-b17e-8d945b61f86a" class=""><strong>Desarrollo web</strong></p><p id="93a44c14-205f-4f42-9d9a-c04fb879ca71" class=""><strong>Márketing</strong></p><p id="5b8d9ca6-ccc3-4ea3-86d0-1372ec7fbe9a" class=""><strong>experiencia de usuario</strong></p><p id="a8933efd-8231-4923-93d1-a53b9466e9f8" class=""><strong>Gestión de proyectos</strong></p><p id="9556857a-3942-4bbf-9bef-184a54938c08" class=""><strong>Libros</strong></p><p id="515549dd-ff27-4bb9-8cde-1f8cd2903158" class=""><strong>@ Bootcamps, cursos en línea, plataformas de aprendizaje</strong> 
+The Hacking Project, Le Wagon On Demand, GoRails, freecodecamp Webcrunch, Grafikart, Udemy, Tuto.com,Github, desbordamiento de pila
+<em>→ Deseo aprender más sobre Python, Vue.js, JavaScript</em></p><p id="81cf51c5-8f84-4492-bb3b-ebd5adaf2dd7" class="">→ <strong>Intentar</strong> lanzar nuevas empresas y ser <strong>emprendedor..
+</strong> Openclassrooms, Marketing Mania, Antoine BM, Niel Patel, Sean Ellis Cursos internos y tutoría @ Growth District Ecommerce → Gabriel St-Germain, Yomi Denzel, Luca Freund <em>(mentor) Dispuestos a desarrollarse Habilidades</em> en <strong>ventas, SEO, Ads Scaling.</strong></p><p id="f225828b-e719-4ba0-abd9-18027b036408" class=""><strong>Muchos cursos en línea</strong> @ Udemy, <strong>Design Sprint Masterclass</strong> @ <a href="http://ajsmart.com/">Aj &amp; Smart </a><em>→ Me gustaría aprender más sobre Producto, UX (y UI: o)</em></p><p id="75a12af6-4cb4-4d23-aa5d-faaa3c41cf0c" class=""><strong>Formación Freelance @ </strong><a href="http://livementor.io/">LiveMentor </a><strong>Gestión de proyectos digitales</strong> @ <a href="http://openclassrooms.com/">OpenClassrooms</a>  
+Distrito de crecimiento con <em>@ </em><a href="mailto:ghp.strasbourg@gmail.com"><em>Bryan Rassen, Alexis Landres, Niko Dsign, Romain Pelletier, David Lakomski</em></a></p><p id="2797d55d-0e2d-4687-b208-a034b34603b3" class="">Sprint, Hacking Growth, Piense y hágase rico, La semana de 4 horas, Enganchado, El libro de la selva, Sinceridad radical, Cómo ganar amigos e influir en las personas, Enganchado <em>y más conferencias</em><em> 📕</em></p><p id="1a664f43-453d-402f-8486-6d4cf28a823e" class="">
+</p><h2 id="01f51868-38ef-401c-b95b-bc9488553f22" class="">Software</h2><ul id="0bd5209c-5289-4fa5-8218-6a8380e35862" class="toggle"><li><details open=""><summary><strong>Rhino</strong></summary><ul id="ab1c2547-226b-4393-b490-83a78c1d4c32" class="bulleted-list"><li style="list-style-type:disc">Grasshopper | Rhinoscript | Enscape | Octane</li></ul></details></li></ul><ul id="4f6e51cd-6c27-4c00-8661-5a0f08e62788" class="toggle"><li><details open=""><summary><strong>Adobe Suite</strong></summary><ul id="cce8c5e3-aa0a-4851-a9aa-f58ca40c18e6" class="bulleted-list"><li style="list-style-type:disc">PS | InDesign | Illustrator</li></ul></details></li></ul><ul id="27ea0e28-b7cf-497f-9939-c15b4be4f835" class="toggle"><li><details open=""><summary><strong>Programming</strong></summary><ul id="833474a3-72f8-4cc1-999f-988527a676b7" class="bulleted-list"><li style="list-style-type:disc">Swift | Python | HTML/CSS</li></ul></details></li></ul><p id="ba120994-39e6-4ec1-928d-b9a95b839db9" class=""><strong>Unreal Engine</strong></p><p id="02da61de-41ee-42b7-93a7-f1ba7a4c4492" class=""><strong>Revit</strong></p><p id="fde36d02-c11d-42f7-9ac2-69357c99b0d1" class=""><strong>AutoCAD</strong></p><p id="55a154ee-d587-4c0d-87a9-09b51ab5d6d0" class=""><strong>3dsMAX</strong></p><p id="2e0f7e85-58d2-434d-b34b-248d6994e376" class=""><strong>Final Cut Pro</strong></p><h3 id="cb3c37a9-6d4d-49b3-ad09-c5308d58f540" class="">Languages</h3><p id="7f9ebabd-94c1-4eed-91e6-85fe8bdf97bb" class="">🇬🇧 Inglés  - B1-B2</p><p id="943819aa-344a-440a-929f-263c3a0a8830" class="">🇪🇸 Español - Lengua materna</p><h1 id="b09ce4ba-fbf3-44e2-b083-e950d4035135" class=""><strong>Estoy disponible para nuevos retos. ¡Hasta pronto!</strong></h1><div id="2c19c7e4-682a-4762-b215-311aad43d262" class="column-list"><div id="e7376a43-aef0-4037-9ee7-8468f2f22f2f" style="width:50%" class="column"><p id="3c7eba31-e049-4948-94af-0802dc89835a" class="">Teléfono: 0034 6702657</p></div><div id="62b8ee71-a4eb-4682-b6d1-ebdc5f8974d3" style="width:50%" class="column"><p id="20d2bb86-a3a4-474b-8a23-221a1f6eef71" class=""><strong><a href="mailto:elianaaliz16@gmail.com">elianaaliz16@gmail.com</a></strong><strong> ✉️</strong></p></div></div></div></article></body></html>
